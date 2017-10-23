@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apex System Assessment</title>
+<meta charset="utf-8"/>
+</head>
+<body style ="padding-top: 20px">
+	<header>
+		<div class= "container">
+			<div class="title">
+                 <h1>Apex System Assessment</h1>
+            </div>
+		</div>
+		
+	</header>
+
+	<section>
+		
+		<form  method="post" id="frmAppointment" action=" ">
+			
+			<div class="col-md-10 col-md-offset-1">
+					<div class="well">
+						<div id = "errorMsg" class="alert alert-danger" style="display:none;"></div>
+                        <div id = "successMsg" class="alert alert-success" style="display:none;"></div>
+						<div>
+							<input type="button" value="New" id="btnNew" class="btn btn-primary"/>
+						</div>
+						
+						<div id = "showInfo">
+							<table  class="table table-bordered">
+								<thead>
+									<tr class="success">
+										<td colspan="2">
+											<h1 style="color:#fff;">Add Appointments</h1>
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Date</td>
+										<td><input type="date" id="txtDate" name="txtDate" placeholder="date"  class="form-control input-md"/></td>
+									</tr>
+									<tr>
+										<td>Time</td>
+										<td><input type="time" id="txtTime" name="txtTime" placeholder="time"  class="form-control input-md"/></td>
+									</tr>
+									<tr>
+										<td>Description</td>
+										<td><textarea id="txtDescription" placeholder="description" name="txtDescription" rows="3" cols="5"  class="form-control input-md"></textarea></td>
+									</tr>
+									<tr class="success">
+										<td colspan="2">
+											<div class="pull-right">
+												<input type="submit" value="Add" id="btnAdd" class="btn btn-success"/>&nbsp;
+												<input type="button" value="Cancel" id="btnCancel" class="btn btn-danger"/>
+											</div>
+											
+										</td>
+										
+										
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+					
+					</div>
+			</div>
+		</form>
+		<br />
+		<form>
+			<div id="search" class="col-md-10 col-md-offset-1">
+				<input type="text" id="txtSearch" name="txtSearch" required="true" placeholder="Search"/>
+				<input type="button" value="Search" id="btnSearch" class="btn btn-success"/><br />
+			</div>
+		</form>
+		 	                
+		<br />
+				
+	</section>
+		
+	<section>
+		<form>
+			<div  class="col-md-10 col-md-offset-1">
+					<div class="well">
+						<div  id="displayAppointment" ></div>
+                       
+				</div>
+			</div>
+		</form>
+	</section>
+	<footer></footer>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<link href="css/custom.css" rel="stylesheet">
+	<script src="js/customScript.js"></script>
+</body>
+</html>
